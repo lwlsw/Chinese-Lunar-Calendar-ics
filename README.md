@@ -20,6 +20,26 @@
 
 chinese_lunar_my.ics是我正在使用的，会不定时更新
 
+cmy是我修改过的增加时间的自动生成程序。
+
+### C 版本
+
+C版本速度更快，但暂时只在终端上输出ical。用户必须使用`>`将stdout的结果导入到指定文件以生成ical文件。
+
+编译：
+
+    $ cd c
+    $ make
+
+运行:
+
+    #生成某年农历
+    $ ./lunarcal 2016 > chinese_lunar_2016.ics
+
+    #生成数年农历
+    $ ./lunarcal 2016 2019 > chinese_lunar_2016_2019.ics
+
+
 感谢
 https://github.com/infinet/lunar-calendar
 这个项目
